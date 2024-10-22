@@ -13,7 +13,7 @@ namespace CatchUpPlatform.API.News.Application.Internal
     ///     This class implements the basic operations for a favorite source query service.
     /// </remarks>
     /// <param name="favoriteSourceRepository">The FavoriteSourceRepository instance.</param>
-    public class FavoriteSourceQueryService(IFavoriteSourceRepository favoriteSourceRepository, IUnitOfWork unitOfWork: IFavoriteSourceQueryService
+    public class FavoriteSourceQueryService(IFavoriteSourceRepository favoriteSourceRepository, IUnitOfWork unitOfWork): IFavoriteSourceQueryService
     {
         /// <inheritdoc />
         public async Task<FavoriteSource?> Handle(GetFavoriteSourceByIdQuery query)
