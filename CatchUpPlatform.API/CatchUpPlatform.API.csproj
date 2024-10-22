@@ -9,7 +9,6 @@
 	<ItemGroup>
 		<Folder Include="News\Domain\Model\Entities\" />
 		<Folder Include="News\Domain\Model\Valueobjects\" />
-		<Folder Include="News\Infrastructure\" />
 	</ItemGroup>
 
 	<ItemGroup>
