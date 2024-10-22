@@ -29,7 +29,7 @@ namespace CatchUpPlatform.API.Shared.Infrastructure.Persistence.EFC.Repositories
             _context.Set<TEntity>().Remove(entity);
         }
 
-        async Task<TEntity?> IBaseRepository<TEntity>.FindByAsync(int id)
+        async Task<TEntity?> IBaseRepository<TEntity>.FindByIdAsync(int id)
         {
             return await _context.Set<TEntity>().FindAsync(id);
         }
